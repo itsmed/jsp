@@ -23,12 +23,12 @@ const Header = (props) => (
               <h6 style={{fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Hayward, CA 94544</h6>
               <h6 style={{fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}><a href='tel:1-510-753-9667'>(510)-753-9667</a></h6>
             </div>
-            <div style={{textAlign: 'center', verticalAlign: 'middle', backgroundColor: '#fff', display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Closed Mon.</h6>
-              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Tues. 4pm - 9pm</h6>
-              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Wed. - Fri. 11am - 9pm</h6>
-              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Sat. 12pm - 9:30pm</h6>
-              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '22px', fontFamily: 'impact'}}>Sun. 2pm - 8pm</h6>
+            <div style={{textAlign: 'center', verticalAlign: 'middle', backgroundColor: '#fff', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between'}}>
+              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '20px', fontFamily: 'impact'}}>Closed Mon.</h6>
+              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '20px', fontFamily: 'impact'}}>Tues. 4pm - 9pm</h6>
+              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '20px', fontFamily: 'impact'}}>Wed. - Fri. 11am - 9pm</h6>
+              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '20px', fontFamily: 'impact'}}>Sat. 12pm - 9:30pm</h6>
+              <h6 style={{flex: '1', fontWeight: 'bolder', fontSize: '20px', fontFamily: 'impact'}}>Sun. 2pm - 8pm</h6>
             </div>
           </div>
           <NavMenu />
