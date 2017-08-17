@@ -15,7 +15,6 @@ import Landing from '../routes/landing/Landing';
 import MenuRoute from '../routes/menu-route/MenuRoute';
 import Header from '../components/header/Header';
 import NotFound from '../routes/not-found/NotFound';
-import OrderRoute from '../routes/order-route/OrderRoute';
 
 class App extends Component {
   render() {
@@ -27,7 +26,6 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/catering' component={Catering} />
           <Route path='/menu' component={MenuRoute} />
-          <Route path='/order' component={OrderRoute} />
           <Route path='/admin-panel' component={AdminPanel} />
           <Route component={NotFound} />
         </Switch>

@@ -5,6 +5,6 @@ export const firebaseConfig = {
   authDomain: 'just-potato-salad.firebaseapp.com',
   databaseURL: 'https://just-potato-salad.firebaseio.com',
   projectId: 'just-potato-salad',
-  storageBucket: '',
+  storageBucket: 'just-potato-salad.appspot.com',
   messagingSenderId: '711232620854'
 };

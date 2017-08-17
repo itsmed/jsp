@@ -87,6 +87,7 @@ footer {
   -webkit-flex-wrap: wrap;
   height: 60px;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 1em;
   text-align: center;
   width: 100%;
@@ -196,6 +197,12 @@ footer {
 .menu--item--notes {
   font-size: 14pt;
 }
+
+.menu--item--image {
+  max-height: 200px;
+}
+
+
 /*****************************************************/
 
 @media (max-width: 1200px) {
@@ -218,7 +225,6 @@ footer {
   }
 
   .flex--container {
-    /*display: block;*/
     flex-direction: column;
     -webkit-flex-direction: column;
   }

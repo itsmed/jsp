@@ -101,7 +101,7 @@ class MenuRoute extends Component {
                         <div style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
                           {
                             currentMenuSection[category].items.map(item => (
-                              <MenuItem className='flex--item' key={item.name.concat(' ', category)} item={item} />
+                              <MenuItem storage={this.props.firebase.storage()} className='flex--item' key={item.name.concat(' ', category)} item={item} />
                             ))
                           }
                         </div>
