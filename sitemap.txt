@@ -17,8 +17,3 @@ http://justpotatosalad.com
 http://justpotatosalad.com/menu
 http://justpotatosalad.com/catering
 http://justpotatosalad.com/about
-
-justpotatosalad.com
-justpotatosalad.com/menu
-justpotatosalad.com/catering
-justpotatosalad.com/about
