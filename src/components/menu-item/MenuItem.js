@@ -13,17 +13,22 @@ class MenuItem extends Component {
     };
 
     this.toggleImageModal = this.toggleImageModal.bind(this);
+    this.doesNothing = this.doesNothing.bind(this);
   }
 
   toggleImageModal() {
     this.setState({ showImageModal: !this.state.showImageModal });
   }
 
+  doesNothing() {
+    return
+  }
+
   render() {
     const { item } = this.props;
 
     return <div style={{width: '250px', margin: '1em', padding: '1.5em', borderBottomStyle: 'dotted', borderBottomWidth: '2px'}}>
-      { 
+      {
         this.state.showImageModal
           ? <div onClick={ this.toggleImageModal } style={{width: '350px', maxHeight: '350px', borderStyle: 'solid', position: 'relative', bottom: '3em', right: '4em', backgroundColor: 'azure'}}>
             <strong>{item.name}</strong>
@@ -32,8 +37,8 @@ class MenuItem extends Component {
           </div>
           : ''
       }
-      <div onClick={ this.toggleImageModal }>
-        <h4 onMouseEnter={ this.toggleImageModal } className='menu--item--header'>{item.name}</h4>
+      <div onClick={ item.imagePath === false ? this.doesNothing : this.toggleImageModal }>
+        <h4 onMouseEnter={ item.imagePath === false ? this.doesNothing : this.toggleImageModal } className='menu--item--header'>{item.name}</h4>
         {
           !item.available
             ? <p className='menu--item--details'>not available at this time.</p>
@@ -50,8 +55,8 @@ class MenuItem extends Component {
                       </div>
                     ))
               }
-              { 
-                item.notes 
+              {
+                item.notes
                   ? <span className='menu--item--details' style={{flex: 1, marginTop: '3px'}}>{item.notes}</span>
                   : ''
               }

@@ -14,7 +14,7 @@ const createStoreWithMiddlewares = compose(
   reactReduxFirebase(firebaseConfig, {
     menu: 'menu'
   }),
-  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__RED jUX_DEVTOOLS_EXTENSION__()
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )(createStore);
 
 export const store = createStoreWithMiddlewares(rootReducer);

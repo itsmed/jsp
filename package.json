@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "core-js": "^2.5.1",
     "enzyme": "^2.9.1",
     "firebase": "^4.2.0",
     "react": "^15.6.1",

@@ -44,7 +44,7 @@ class MenuRoute extends Component {
         : <div>
             {
               /*************************************
-                Navigation for menu sections  
+                Navigation for menu sections
               *************************************/
             }
             <div className='menu--nav--container'>
@@ -80,13 +80,13 @@ class MenuRoute extends Component {
                   /*************************************
                    current menu items.
                    If the items key is missing, then
-                   there are multiple subsections to 
+                   there are multiple subsections to
                    the menu section.
                    *************************************/
                 }
                 {
-                  Object.keys(currentMenuSection).includes('items')
-                  ? 
+                  Object.keys(currentMenuSection).indexOf('items') !== -1
+                  ?
                     currentMenuSection.items.map(item => (
                       <MenuItem item={item} />
                     ))
@@ -110,7 +110,7 @@ class MenuRoute extends Component {
                 }
               </div>
             </div>
-        </div>  
+        </div>
       }
     </div>;
   }
